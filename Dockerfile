@@ -11,7 +11,7 @@ COPY app.py /app/
 RUN pip install --no-cache-dir ddtrace
 
 # Set environment variables for Datadog
-ENV DD_SERVICE="example-service" \
+ENV DD_SERVICE="pyfon-service" \
     DD_ENV="production" \
     DD_VERSION="1.0.0"
 

@@ -29,7 +29,7 @@ def log_random_message():
     while True:
         message = random.choice(LOG_MESSAGES)
         log.info(message, extra={
-            'dd.service': 'example-service',
+            'dd.service': 'pyfon-service',
             'dd.env': 'production',
             'dd.version': '1.0.0'
         })

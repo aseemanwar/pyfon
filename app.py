@@ -29,9 +29,9 @@ def log_random_message():
     while True:
         message = random.choice(LOG_MESSAGES)
         log.info(message, extra={
-            'dd.service': 'pyfon-service',
+            'dd.service': 'python-service',
             'dd.env': 'production',
-            'dd.version': '1.0.0'
+            'dd.version': '1.0.1'
         })
         time.sleep(10)
 
